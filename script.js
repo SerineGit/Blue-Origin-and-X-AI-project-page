@@ -1,11 +1,11 @@
 
  // Celestial body data mapping with image sources
         const celestialBodies = {
-            'sun': '<div class="celestial-image sun-img"><img src="https://github.com/SerineGit/Blue-Origin-and-X-AI-project-page/blob/main/img/sun.png" alt="Sun" data-celestial="sun"></div>',
-            'earth': '<div class="celestial-image earth-img"><img src="https://github.com/SerineGit/Blue-Origin-and-X-AI-project-page/blob/main/img/earth.png" alt="Earth" data-celestial="earth"></div>',
-            'jupiter': '<div class="celestial-image jupiter-img"><img src="https://github.com/SerineGit/Blue-Origin-and-X-AI-project-page/blob/main/img/jupiter.png" alt="Jupiter" data-celestial="jupiter"></div>',
-            'mars': '<div class="celestial-image mars-img"><img src="https://github.com/SerineGit/Blue-Origin-and-X-AI-project-page/blob/main/img/mars.png" alt="Mars" data-celestial="mars"></div>',
-            'moon': '<div class="celestial-image moon-img"><img src="https://github.com/SerineGit/Blue-Origin-and-X-AI-project-page/blob/main/img/moon.png" alt="Moon" data-celestial="moon"></div>'
+            'sun': '<div class="celestial-image sun-img"><img src="https://raw.githubusercontent.com/SerineGit/Blue-Origin-and-X-AI-project-page/refs/heads/main/img/sun.png" alt="Sun" data-celestial="sun"></div>',
+            'earth': '<div class="celestial-image earth-img"><img src="https://raw.githubusercontent.com/SerineGit/Blue-Origin-and-X-AI-project-page/refs/heads/main/img/earth.png" alt="Earth" data-celestial="earth"></div>',
+            'jupiter': '<div class="celestial-image jupiter-img"><img src="https://raw.githubusercontent.com/SerineGit/Blue-Origin-and-X-AI-project-page/refs/heads/main/img/jupiter.png" alt="Jupiter" data-celestial="jupiter"></div>',
+            'mars': '<div class="celestial-image mars-img"><img src="https://raw.githubusercontent.com/SerineGit/Blue-Origin-and-X-AI-project-page/refs/heads/main/img/mars.png" alt="Mars" data-celestial="mars"></div>',
+            'moon': '<div class="celestial-image moon-img"><img src="https://raw.githubusercontent.com/SerineGit/Blue-Origin-and-X-AI-project-page/refs/heads/main/img/moon.png" alt="Moon" data-celestial="moon"></div>'
         };
 
         // Get DOM elements
