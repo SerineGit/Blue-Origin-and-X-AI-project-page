@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Mission - Blue Origin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Animated starfield background -->
+    <div class="starfield">
+        <div class="stars-layer-1"></div>
+        <div class="stars-layer-2"></div>
+        <div class="stars-layer-3"></div>
+    </div>
+    
+    <div class="noise"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">QA MISSION</h1>
+            <p class="subtitle">BLUE ORIGIN & X.AI</p>
+        </div>
+        
+        <div class="celestial-section">
+            <div class="celestial-body" id="celestialBody">
+                <!-- Default: Sun -->
+                <div class="celestial-image sun-img">
+                    <img src="/img/sun.png" alt="sun" data-celestial="sun" class="active">
+                </div>
+            </div>
+            
+            <!-- Navigation orbit line and buttons -->
+            <div class="orbit-line" id="orbitLine">
+                <div class="nav-button btn-about active" data-section="0" data-celestial="sun">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="m12 1 0 6m0 6 0 6m11-7-6 0m-6 0-6 0"/>
+                    </svg>
+                </div>
+                <div class="nav-button btn-files" data-section="1" data-celestial="earth">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                </div>
+                <div class="nav-button btn-team" data-section="2" data-celestial="jupiter">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="m22 21-3-3m0-6a3 3 0 1 0-6 0 3 3 0 0 0 6 0z"/>
+                    </svg>
+                </div>
+                <div class="nav-button btn-projects" data-section="3" data-celestial="mars">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <rect x="7" y="7" width="10" height="6" rx="1"/>
+                    </svg>
+                </div>
+                <div class="nav-button btn-contact" data-section="4" data-celestial="moon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="m4 4 16 0c1.1 0 2 .9 2 2l0 12c0 1.1-.9 2-2 2l-16 0c-1.1 0-2-.9-2-2l0-12c0-1.1 .9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <div class="content-wrapper" data-active="0">
+                <!-- About Section -->
+                <div class="content-section active">
+  <div class="section-content">
+    <h2>Solar System Overview</h2>
+    <p><b>Comprehensive Testing Framework for Blue Origin and X.AI Applications</b> <br>
+        This project delivers an end-to-end quality assurance solution for Blue Origin's website and X.AI Grock API.
+      Our process covers UI automation and API testing, ensuring robust validation of functionality, performance, and reliability. </p>
+    <p><strong>Website Testing:</strong>  Manual & automated UI testing (Selenium), detailed test cases, posetive, negative & unittesting.
+    <br><strong>Blue Origin API Testing: </strong> Postman collections, REST API validation for accuracy, performance & error handling.
+    <br><strong>X.AI Grock API Testing: </strong> End-to-end API workflows, AI response verification, stability testing.
+    </p>
+  </div>
+</div>
 
+                
+                <!-- Files Section -->
+                <div class="content-section">
+                    <div class="section-content">
+                        <h2>Earth Mission Files</h2>
+                        <p>If you visit our repository, you’ll find complete testing documentation, including detailed test plans, test cases.</p>
+                        <p>
+Our QA process covers multiple layers: Selenium-based unit tests in Python, BrowserStack-powered cross-browser validation, and API testing for both website functionality and AI services.
+All automated and manual testing reports, along with execution logs and coverage metrics, are available for review.</p>
+                        <p>
+This transparent approach ensures that every feature is verified, every integration is validated, and every release meets our quality standards.</p>
+                        <a href="https://github.com/SergioUS/Blue-Origin-and-X-AI-testing-project" class="link-button" target="_blank">View Earth Repository</a>
+                    </div>
+                </div>
+                
+                <!-- Team Section -->
+                <div class="content-section">
+                    <div class="section-content">
+                        <h2>Jupiter Exploration Team</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-avatar"> <img src="img/team/Sergey.jpg" alt="Sergey Efremov"></div>
+                                <h4>Sergey Efremov</h4>
+                                <p>Project Manager</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/SergioUS" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/sefremoff/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Tatsiana.jpg" alt="Tatsiana Lentz"></div>
+                                <h4>Tatsiana Lentz</h4>
+                                <p>Team Lead</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/TatsianaLentz" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/tatsianalentz/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Anton.jpg" alt="Anton Buyanovski"></div>
+                                <h4>Anton Buyanovski </h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/abuyanovski" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/antonb-qa/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Azady.jpg" alt="Azady Esenov"></div>
+                                <h4>Azady Esenov</h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/azesnv" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/azadyesenov/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Diana.jpg" alt="Diana Abdullaeva"></div>
+                                <h4>Diana Abdullaeva </h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/diana-abdullaeva" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/diana-abdullaeva-087216211/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Elena.jpg" alt="Elena Otrosnova"></div>
+                                <h4>Elena Otrosnova</h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/elenaotrosnova" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/elena-otrosnova/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Julia.jpg" alt="Julia Delmar"></div>
+                                <h4>Julia Delmar </h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/JuliaDel" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/julia-delmar/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/SERGEIY.jpeg" alt="Sergiy Borovich"></div>
+                                <h4>Sergiy Borovich</h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/SBorovich" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/sergiy-borovich/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Serine.jpg" alt="Serine Zargaryan"></div>
+                                <h4>Serine Zargaryan</h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/SerineGit" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/serinezargaryan/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar"><img src="img/team/Viktor.jpg" alt="Viktor Pervushkin"></div>
+                                <h4>Viktor Pervushkin</h4>
+                                <p>QA Engineer</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/1vpfcb" title="GitHub">GH</a>
+                                    <a href="https://www.linkedin.com/in/viktp/" title="LinkedIn">IN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projects Section -->
+                <div class="content-section">
+                    <div class="section-content">
+                        <h2>Mars Mission Projects</h2>
+                 <p>Visit our other QA testing projects, where we apply the same high standards with Selenium Unittest automation and API testing, covering a variety of domains just like our main projects.</p>
+
+                        <ul class="project-list">
+    <li><a href="https://github.com/SergioUS/STARLINK-testing-project">StarLink</a></li>
+    <li><a href="https://github.com/SergioUS/Tesla_testing_project">Tesla</a></li>
+    <li><a href="https://github.com/SergioUS/X-AI-Testing-project">X.AI</a></li>
+    <li><a href="https://github.com/SergioUS/NASA_testing_project">NASA</a></li>
+    <li><a href="https://github.com/SergioUS/Apple-and-X-AI-testing-project"> Apple & X.AI</a></li>
+</ul>
+
+            </div>
+                </div>
+                
+                <!-- Contact Section -->
+                <div class="content-section">
+                    <div class="section-content">
+                        <h2>Moon Station Contact</h2>
+                        <p><b>QA at Silicon Valley California. </b><br>Study and practice on the real IT projects Live Online Sessions with Silicon Valley professionals</p>
+                        <p>Our programs "QA-Automation +AI" and "QA-Manual" Engineer are created and taught by top QA engineers with real Silicon Valley experience. 
+                            We don’t just teach theory — we share practical skills we use every day in the industry.</p>
+                        <a href="https://qasv.us/en#rec152346049" class="link-button">Contact QASV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
